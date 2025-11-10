@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição no Projeto</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <form id="aluno-form">
+
+            <fieldset id="token-step">
+                <header>
+                    <img src="src/images/images.jpg" alt="Logo do Projeto" id="header-logo">
+
+                    <h1>Bem-vindo ao MEI-U!</h1>
+                    <p>Por favor, insira seu token de acesso para continuar.</p>
+                </header>
+                
+                <div class="form-group">
+                    <label for="token">Seu Token de Acesso</label>
+                    <input type="text" id="token" name="token" placeholder="Insira seu token" required>
+                </div>
+                
+                <button type="button" id="validate-token-btn" class="submit-btn">Validar Token</button>
+            </fieldset>
+
+            <fieldset id="questionnaire-step" style="display: none;">
+                <header>
+                    <h1>Questionário</h1>
+                    <p>Seu token foi validado! Agora, complete seus dados.</p>
+                </header>
+
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <hr>
+                
+                <h3>Questionário do MEI-U</h3>
+                
+                <div id="question-list">
+                    
+                    <div class="form-group">
+                        <label for="pergunta1">Tipo de pergunta 1</label>
+                        <input type="text" id="pergunta1" name="motivacao_projeto" class="question-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pergunta2">Tipo de pergunta 2</label>
+                        <select id="pergunta2" name="area_interesse" class="question-input">
+                            <option value="">Selecione uma opção</option>
+                            <option value="marketing">1</option>
+                            <option value="tecnologia">2</option>
+                            <option value="gestao">3</option>
+                            <option value="outro">4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de pergunta 3</label>
+                        <div class="radio-group">
+                            <input type="radio" id="exp1" name="experiencia_mkt" value="1" class="question-input"><label for="exp1">1</label>
+                            <input type="radio" id="exp2" name="experiencia_mkt" value="2" class="question-input"><label for="exp2">2</label>
+                            <input type="radio" id="exp3" name="experiencia_mkt" value="3" class="question-input"><label for="exp3">3</label>
+                            <input type="radio" id="exp4" name="experiencia_mkt" value="4" class="question-input"><label for="exp4">4</label>
+                            <input type="radio" id="exp5" name="experiencia_mkt" value="5" class="question-input"><label for="exp5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pergunta4">Deixe um comentário (opcional)</label>
+                        <textarea id="pergunta4" name="comentario" class="question-input" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="perguntaVideo">Relato em Vídeo (Opcional)</label>
+                        <p class="video-instructions">
+                            Grave um vídeo curto (máx. 2 min) no seu celular/PC falando 
+                            sobre o que aprendeu e anexe o arquivo aqui.
+                        </p>
+                        <input type="file" id="perguntaVideo" name="video_relato" accept="video/*" class="file-input">
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <input type="checkbox" id="consentimento" name="consentimento" required>
+                    <label for="consentimento">Autorizo o uso dos meus dados para marketing.</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Dados e Vídeo</button>
+            </fieldset>
+
+        </form>
+
+        <div id="mensagem-sucesso" class="success-message" style="display: none;"></div>
+
+    </div>
+    
+    <script src="src/js/script.js" defer></script>
+</body>
+</html>

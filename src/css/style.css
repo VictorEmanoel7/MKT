@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7af;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff175f3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+textarea.question-input,
+select.question-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.form-group label[for="consentimento"] {
+    display: inline;
+    font-weight: normal;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #fcff48;
+}
+
+#validate-token-btn {
+    background-color: #ffffff;
+}
+
+#validate-token-btn:hover {
+    background-color: #fcff48;
+}
+
+.success-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#question-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+#question-list .form-group {
+    margin-bottom: 25px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.radio-group input[type="radio"] {
+    vertical-align: middle;
+}
+
+textarea.question-input {
+    resize: vertical;
+    min-height: 60px;
+}
+
+select.question-input {
+    background-color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 25px 0;
+}
+
+h3 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.video-instructions {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.file-input {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.file-input:hover {
+    background-color: #f9f9f9;
+}
+
+#header-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
