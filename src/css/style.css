@@ -264,9 +264,9 @@ input[type="radio"] {
 
 .mini-logo {
     display: block;
-    position: fixed; 
-    top: 30px;   
-    right: 30px; 
+    position: absolute; 
+    top: -115px;   
+    right: -150px; 
     width: 90px; 
     height: auto; 
     object-fit: contain;
